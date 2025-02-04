@@ -26,5 +26,39 @@ function criarMenu(cidade){
 
     menu.appendChild(novoItem)
 }
+
+const card = [
+    {imagem:'ferrari.png' , titulo: '', desc:'', preco:'' },
+    {imagem:'mclaren.png' , titulo: '', desc:'', preco:'' },
+    {imagem:'porche.png' , titulo: '', desc:'', preco:'' },
+    {imagem:'lamborguini.png' , titulo: '', desc:'', preco:'' },
+    {imagem:'buggati.png' , titulo: '', desc:'', preco:'' }
+]
+
+function Cards(cards){
+    const main = document.createElement('main')
+    const novoItem = document.createElement('div')
+    const cartao =  document.createElement('card')
+    const novoTexto = document.createElement('h1')
+    const descricao = document.createElement('p')
+    const novaImg = document.createElement('img')
+    const novoButton = document.createElement('button')
+
+    novaImg.src = ` ./icon/${ferrari.icon}`
+
+
+    novoTexto.textContent = cards.titulo
+    descricao.textContent = cards.desc
+
+
+    main.appendChild(novoItem)
+    novoItem.appendChild(cartao)
+    novoItem.appendChild(novoTexto)
+    novoItem.appendChild(novaImg)
+    novoItem.appendChild(descricao)
+    novoItem.appendChild(novoButton)
+
+
+}
    
 cidades.forEach(criarMenu)
